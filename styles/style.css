@@ -4,21 +4,23 @@ body {
     overscroll-behavior: none;
 }
 
-.slideinleft {
-    position: relative;
-    animation-name: slide-in-left;
-    animation-duration: 1s;
+@media (prefers-reduced-motion: no-preference) {
+    .slideinleft {
+        position: relative;
+        animation-name: slide-in-left;
+        animation-duration: 0.5s;
+    }
 }
 
 @keyframes slide-in-left {
-    0% { left: -100%; }
+    0% { left: -90%;}
     100% { left: 0%; }
 }
 
 .slideinright {
     position: relative;
     animation-name: slide-in-right;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes slide-in-right {
