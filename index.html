@@ -41,7 +41,7 @@
         </div>
         <hr> 
         <!-- About Me Section -->
-        <div class="container-xxl align-items-center d-flex p-2" style="min-height:100vh" id="about">
+        <div class="container-xxl align-items-center d-flex p-2 slideinleft-wrapper" style="min-height:100vh" id="about">
             <div class="container slideinleft slideinleft-able">
                 <h1 class="display-4 fw-bold ">About Me</h1>
                 <div class="card mb-3 bg-dark text-white">
@@ -269,8 +269,21 @@ const silObserver = new IntersectionObserver(entries => {
     })
 })
 const sils = document.querySelectorAll(".slideinleft-wrapper");
-console
 sils.forEach((element) => silObserver.observe(element));
+
+// Slide in right observer
+const sirObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const sil = entry.target.querySelector(".slideinright-able")
+        if (entry.isIntersecting) {
+            sil.classList.add("slideinright")
+            return;
+        } 
+        sil.classList.remove("slideinright")
+    })
+})
+const sirs = document.querySelectorAll(".slideinright-wrapper");
+sirs.forEach((element) => sirObserver.observe(element));
 
 </script>
 </html>
