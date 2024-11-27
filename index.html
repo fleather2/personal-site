@@ -10,16 +10,16 @@
     </head>
     <body>
         <!-- "Hero View" -->
-        <div class="container-xxl align-items-center d-flex p-2 slideinleft-wrapper" style="min-height:100vh">
-            <div class="p-2 flex-grow-1 slideinleft slideinleftable">
-                <div class="">
+        <div class="container-xxl align-items-center d-flex p-2 " style="min-height:100vh">
+            <div class="p-2 flex-grow-1 slideinleft slideinleft-wrapper">
+                <div class="slideinleft-able">
                     <h1 class="display-1 fw-bold">Lucas Feather</h1>
                     <h1 class="display-5">Software Engineer</h1>
                     <h1 class="display-5">Musician</h1>
                 </div>
             </div>
             <div class="p-2 slideinright-wrapper">
-                <div class="list-group list-group-flush bg-transparent display-5 slideinright slideinrightable">
+                <div class="list-group list-group-flush bg-transparent display-5 slideinright slideinright-able">
                     <a href="#about" class="list-group-item list-group-item-action bg-transparent">About</a>
                     <a href="#projects" class="list-group-item list-group-item-action bg-transparent">Projects</a>
                     <a href="#music" class="list-group-item list-group-item-action bg-transparent">Music</a>
@@ -41,8 +41,8 @@
         </div>
         <hr> 
         <!-- About Me Section -->
-        <div class="container-xxl align-items-center d-flex p-2 slideinleft-wrapper" style="min-height:100vh" id="about">
-            <div class="container slideinleft slideinleftable">
+        <div class="container-xxl align-items-center d-flex p-2" style="min-height:100vh" id="about">
+            <div class="container slideinleft slideinleft-able">
                 <h1 class="display-4 fw-bold ">About Me</h1>
                 <div class="card mb-3 bg-dark text-white">
                     <img src="/resources/headshot_wide.jpg" class="card-img-top" alt="Me on da bench">
@@ -260,28 +260,17 @@
 // Slide in left observer
 const silObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+        const sil = entry.target.querySelector(".slideinleft-able")
         if (entry.isIntersecting) {
-            entry.target.classList.add("slideinleft")
+            sil.classList.add("slideinleft")
             return;
         } 
-        entry.target.classList.remove("slideinleft")
+        sil.classList.remove("slideinleft")
     })
 })
-const sils = document.querySelectorAll(".slideinleftable");
+const sils = document.querySelectorAll(".slideinleft-wrapper");
+console
 sils.forEach((element) => silObserver.observe(element));
-
-// Slide in right observer
-const sirObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("slideinright")
-            return;
-        } 
-        entry.target.classList.remove("slideinright")
-    })
-})
-const sirs = document.querySelectorAll(".slideinrightable");
-sirs.forEach((element) => sirObserver.observe(element));
 
 </script>
 </html>
