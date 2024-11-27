@@ -4,17 +4,25 @@ body {
     overscroll-behavior: none;
 }
 
-.slideinfromleft {
+.slideinleft {
     position: relative;
-    animation-name: slide-enter-from-left;
+    animation-name: slide-in-left;
     animation-duration: 1s;
 }
 
-@keyframes slide-enter-from-left {
-    0% {
-        left: -100%;
-    }
-    100% {
-        left: 0%;
-    }
+@keyframes slide-in-left {
+    0% { left: -100%; }
+    100% { left: 0%; }
+}
+
+.slideinright {
+    position: relative;
+    animation-name: slide-in-right;
+    animation-duration: 2s;
+}
+
+@keyframes slide-in-right {
+    0% { right: -150%; }
+    50% { right: -150%; }
+    100% { right: 0%; }
 }
