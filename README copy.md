@@ -1,1 +1,0 @@
-I should make it a challenge to NOT use any JS in this project.
