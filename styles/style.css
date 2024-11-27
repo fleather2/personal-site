@@ -13,8 +13,8 @@ body {
 }
 
 @keyframes slide-in-left {
-    0% { left: -90%;}
-    100% { left: 0%; }
+    0% { transform: translate(-100%, 0); }
+    100% { transform: none; }
 }
 
 .slideinright {
@@ -24,6 +24,6 @@ body {
 }
 
 @keyframes slide-in-right {
-    0% { right: -90%; }
-    100% { right: 0%; }
+    0% { transform: translate(200%, 0); }
+    100% { transform: none; }
 }
