@@ -12,14 +12,12 @@
         <script>0</script>
         <!-- "Hero View" -->
         <div class="container-xxl align-items-center d-flex p-2 " style="min-height:100vh">
-            <div class="p-2 flex-grow-1 slideinleft slideinleft-wrapper">
-                <div class="slideinleft-able">
-                    <h1 class="display-1 fw-bold">Lucas Feather</h1>
-                    <h1 class="display-5">Software Engineer</h1>
-                    <h1 class="display-5">Musician</h1>
-                </div>
+            <div class="p-2 flex-grow-1">
+                <h1 class="display-1 fw-bold">Lucas Feather</h1>
+                <h1 class="display-5">Software Engineer</h1>
+                <h1 class="display-5">Musician</h1>
             </div>
-            <div class="p-2 slideinright-wrapper">
+            <div class="p-2">
                 <div class="list-group list-group-flush bg-transparent display-5 slideinright-able">
                     <a href="#about" class="list-group-item list-group-item-action bg-transparent">About</a>
                     <a href="#projects" class="list-group-item list-group-item-action bg-transparent">Projects</a>
@@ -48,8 +46,8 @@
         </div>
         <hr> 
         <!-- About Me Section -->
-        <div class="container-xxl align-items-center d-flex p-2 slideinleft-wrapper" style="min-height:100vh" id="about">
-            <div class="container slideinleft-able">
+        <div class="container-xxl align-items-center d-flex p-2" style="min-height:100vh" id="about">
+            <div class="container">
                 <h1 class="display-4 fw-bold ">About Me</h1>
                 <div class="card mb-3 bg-dark text-white">
                     <img src="/resources/headshot_wide.jpg" class="card-img-top" alt="Me on da bench">
@@ -79,124 +77,114 @@
                 <h1 class="display-4 fw-bold">Projects</h1>
                 <br>
                 <!-- Bogey Bunk -->
-                <div class="slideinleft-wrapper">
-                    <div class="card mb-3 bg-dark text-white slideinleft-able">
-                        <div class="row g-0">
-                            <div class="col-md">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bogey Bunk</h5>
-                                    <hr>
-                                    <p class="card-text">
-                                        In March 2025, I released an indie game, Bogey Bunk. It's a sort of turn-based 2D platformer that's a nod to Wii Golf.
-                                        I developed it using Godot.
-                                    </p>
-                                    <a href="https://fleather2.itch.io/bogey-bunk" style="color: white; text-decoration: none;">
-                                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" height="30" width="30" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z"/></svg>
-                                    </a>    
-                                </div>
+                <div class="card mb-3 bg-dark text-white">
+                    <div class="row g-0">
+                        <div class="col-md">
+                            <div class="card-body">
+                                <h5 class="card-title">Bogey Bunk</h5>
+                                <hr>
+                                <p class="card-text">
+                                    In March 2025, I released an indie game, Bogey Bunk. It's a sort of turn-based 2D platformer that's a nod to Wii Golf.
+                                    I developed it using Godot.
+                                </p>
+                                <a href="https://fleather2.itch.io/bogey-bunk" style="color: white; text-decoration: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" height="30" width="30" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z"/></svg>
+                                </a>    
                             </div>
-                            <div class="col-md-4">
-                                <img src="/resources/BogeyBunkIcon.png" class="img-fluid rounded-end" alt="...">
-                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/resources/BogeyBunkIcon.png" class="img-fluid rounded-end" alt="...">
                         </div>
                     </div>
                 </div>
                 <!-- Metronome -->
-                <div class="slideinleft-wrapper">
-                    <div class="card mb-3 bg-dark text-white slideinleft-able">
-                        <div class="row g-0">
-                            <div class="col-md">
-                                <div class="card-body">
-                                    <h5 class="card-title">Metronome</h5>
-                                    <hr>
-                                    <p class="card-text">
-                                        For some, it helps them keep steady tempo. For others, its their bible.
-                                        My bloatless metronome webapp utilizes the Web Audio API to ensure precise timing 
-                                        between audio cues. 
-                                    </p>
-                                    <a href="https://github.com/fleather2/metronome" style="color: white; text-decoration: none;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
-                                    </a>    
-                                </div>
+                <div class="card mb-3 bg-dark text-white slideinleft-able">
+                    <div class="row g-0">
+                        <div class="col-md">
+                            <div class="card-body">
+                                <h5 class="card-title">Metronome</h5>
+                                <hr>
+                                <p class="card-text">
+                                    For some, it helps them keep steady tempo. For others, its their bible.
+                                    My bloatless metronome webapp utilizes the Web Audio API to ensure precise timing 
+                                    between audio cues. 
+                                </p>
+                                <a href="https://github.com/fleather2/metronome" style="color: white; text-decoration: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+                                </a>    
                             </div>
-                            <div class="col-md-4">
-                                <img src="/resources/metronome_screenshot.png" class="img-fluid rounded-end" alt="...">
-                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/resources/metronome_screenshot.png" class="img-fluid rounded-end" alt="...">
                         </div>
                     </div>
                 </div>
                 <!-- Embedded Systems Class -->
-                <div class="slideinright-wrapper">
-                    <div class="card mb-3 bg-dark text-white slideinright-able">
-                        <div class="row g-0">
-                            <div class="col-md"  style="max-width: 500px;">
-                                <img src="/resources/systems.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md">
-                                <div class="card-body">
-                                    <h5 class="card-title">Master's Class - Software Development for Real-Time Embedded Systems</h5>
-                                    <hr>
-                                    <p class="card-text">
-                                        The final and by far most enjoyable course of my academic career was Software Development for 
-                                        Real-Time Embedded Systems. Very light on the detested but all-too-common discussion posts, 
-                                        this class had a very simple premise: throughout the semester, learn about and build increasingly 
-                                        complicated embedded components. On the final week, all of the individual components came together
-                                        and we built a drone whose capabilities included wirelessly streaming video, IMU, and GPS data down 
-                                        to a ground station.
-                                    </p>
-                                    <a href="https://youtube.com/playlist?list=PLEQFafjP7lF3nFYb78Tfo8GofqOR1njc_&si=7elWzAzvudhM_MaB" style="color: white; text-decoration: none;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
-                                    </a>
-                                </div>
+                <div class="card mb-3 bg-dark text-white slideinright-able">
+                    <div class="row g-0">
+                        <div class="col-md"  style="max-width: 500px;">
+                            <img src="/resources/systems.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md">
+                            <div class="card-body">
+                                <h5 class="card-title">Master's Class - Software Development for Real-Time Embedded Systems</h5>
+                                <hr>
+                                <p class="card-text">
+                                    The final and by far most enjoyable course of my academic career was Software Development for 
+                                    Real-Time Embedded Systems. Very light on the detested but all-too-common discussion posts, 
+                                    this class had a very simple premise: throughout the semester, learn about and build increasingly 
+                                    complicated embedded components. On the final week, all of the individual components came together
+                                    and we built a drone whose capabilities included wirelessly streaming video, IMU, and GPS data down 
+                                    to a ground station.
+                                </p>
+                                <a href="https://youtube.com/playlist?list=PLEQFafjP7lF3nFYb78Tfo8GofqOR1njc_&si=7elWzAzvudhM_MaB" style="color: white; text-decoration: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- SFML -->
-                <div class="slideinleft-wrapper">
-                    <div class="card mb-3 bg-dark text-white slideinleft-able">
-                        <div class="row g-0">
-                            <div class="col-md">
-                                <div class="card-body">
-                                    <h5 class="card-title">My SFML Moment</h5>
-                                    <hr>
-                                    <p class="card-text">
-                                        I've done a handful of small hobby projects with Simple and Fast Multimedia Library (SFML). This includes implementations 
-                                        of the famous <a href="https://github.com/fleather2/game-of-life-sfml">Conway's Game of Life</a> and 
-                                        <a href="https://github.com/fleather2/boids-sfml">boids</a>. I also created a Vector Field Visualizer, in which input functions
-                                        are defined for the x and y axes, and particles moved throughout the corresponding vector field. Of all of my projects 
-                                        (including my musical endeavors), the Vector Field Visualizer might be the most mesmerizing. 
-                                    </p>
-                                    <a href="https://github.com/fleather2/vector-field-visualizer-sfml" style="color: white; text-decoration: none;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>   
-                                    </a>    
-                                </div>
+                <div class="card mb-3 bg-dark text-white slideinleft-able">
+                    <div class="row g-0">
+                        <div class="col-md">
+                            <div class="card-body">
+                                <h5 class="card-title">My SFML Moment</h5>
+                                <hr>
+                                <p class="card-text">
+                                    I've done a handful of small hobby projects with Simple and Fast Multimedia Library (SFML). This includes implementations 
+                                    of the famous <a href="https://github.com/fleather2/game-of-life-sfml">Conway's Game of Life</a> and 
+                                    <a href="https://github.com/fleather2/boids-sfml">boids</a>. I also created a Vector Field Visualizer, in which input functions
+                                    are defined for the x and y axes, and particles moved throughout the corresponding vector field. Of all of my projects 
+                                    (including my musical endeavors), the Vector Field Visualizer might be the most mesmerizing. 
+                                </p>
+                                <a href="https://github.com/fleather2/vector-field-visualizer-sfml" style="color: white; text-decoration: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>   
+                                </a>    
                             </div>
-                            <div class="col-md-4">
-                                <img src="/resources/sfml.png" class="img-fluid rounded-end" alt="...">
-                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/resources/sfml.png" class="img-fluid rounded-end" alt="...">
                         </div>
                     </div>
                 </div>
                 <!-- Chaos Game -->
-                <div class="slideinright-wrapper">
-                    <div class="card mb-3 bg-dark text-white slideinright-able">
-                        <div class="row g-0">
-                            <div class="col-md-2">
-                                <img src="/resources/pentagon3.png" class="img-fluid rounded-start" style="height: 100%; width:auto;" alt="...">
-                            </div>
-                            <div class="col-md">
-                                <div class="card-body">
-                                <h5 class="card-title">Chaos Game</h5>
-                                <hr>
-                                <p class="card-text">
-                                    If we're going just by most mesmerizing, though, I would be doing Sierpinksi and his cronies a disservice if I 
-                                    neglected to mention my brief obsession with <a href="https://en.wikipedia.org/wiki/Chaos_game">Chaos Game</a>.
-                                    Using the Python turtle library, I first started with the recursive Triforce, and kept modifying the rules 
-                                    of the "game" until I had created a small gallery of beautiful and complex patterns. 
-                                    It's now one of my favorite ways to convince people that creating cool visualizations is worth their time.
-                                </p>
-                                </div>
+                <div class="card mb-3 bg-dark text-white slideinright-able">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="/resources/pentagon3.png" class="img-fluid rounded-start" style="height: 100%; width:auto;" alt="...">
+                        </div>
+                        <div class="col-md">
+                            <div class="card-body">
+                            <h5 class="card-title">Chaos Game</h5>
+                            <hr>
+                            <p class="card-text">
+                                If we're going just by most mesmerizing, though, I would be doing Sierpinksi and his cronies a disservice if I 
+                                neglected to mention my brief obsession with <a href="https://en.wikipedia.org/wiki/Chaos_game">Chaos Game</a>.
+                                Using the Python turtle library, I first started with the recursive Triforce, and kept modifying the rules 
+                                of the "game" until I had created a small gallery of beautiful and complex patterns. 
+                                It's now one of my favorite ways to convince people that creating cool visualizations is worth their time.
+                            </p>
                             </div>
                         </div>
                     </div>
